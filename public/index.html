@@ -1,0 +1,54 @@
+<!DOCTYPE	html>
+<html	lang="en">
+<head>
+		<meta	charset="UTF-8"	/>
+		<meta	name="viewport"	content="width=device-width,	initial-scale=1.0"	/>
+		<title>AI	Meeting	Notes	&	Action	Tracker</title>
+		<link	rel="stylesheet"	href="style.css"	/>
+</head>
+<body>
+		<div	class="app">
+				<header	class="app__header">
+						<h1>		AI	Meeting	Notes	&amp;	Action	Tracker</h1>
+						<p	class="app__subtitle">Enter	notes	→	generate	an	AI	summary	→	extract	key	points	&amp;	action	items	→	save	to	history</p>
+				</header>
+				<main	class="layout">
+						<!--	LEFT:	Input	+	AI	results	-->
+						<section	class="panel">
+								<h2>1.	Enter	Meeting	Notes</h2>
+								<input	id="meetingTitle"	type="text"	placeholder="Meeting	title	(e.g.	Sprint	Planning	–	Sept	15)"	/>
+								<textarea	id="meetingNotes"	rows="10"	placeholder="Paste	or	type	raw	meeting	notes	here..."></textarea>
+								<div	class="actions">
+										<button	id="analyzeBtn"	class="btn	btn--primary">✨	Generate	AI	Summary</button>
+										<button	id="saveBtn"	class="btn	btn--secondary"	disabled>	Save	Meeting</button>
+										<button	id="clearBtn"	class="btn	btn--ghost">Clear</button>
+								</div>
+								<div	id="status"	class="status"	hidden></div>
+								<div	id="results"	class="results"	hidden>
+										<h2>2.	AI	Summary</h2>
+										<p	id="summaryText"	class="summary-box"></p>
+										<h2>3.	Key	Points</h2>
+										<ul	id="keyPointsList"	class="key-points"></ul>
+										<h2>4.	Action	Items</h2>
+										<ul	id="actionItemsList"	class="action-items"></ul>
+								</div>
+						</section>
+						<!--	RIGHT:	History	-->
+						<section	class="panel">
+								<h2>5.	Meeting	History</h2>
+								<div	id="historyList"	class="history-list">
+										<p	class="empty-state">No	meetings	saved	yet.</p>
+								</div>
+						</section>
+				</main>
+		</div>
+		<!--	Meeting	detail	modal	-->
+		<div	id="modalOverlay"	class="modal-overlay"	hidden>
+				<div	class="modal">
+						<button	id="closeModal"	class="modal__close">&times;</button>
+						<div	id="modalContent"></div>
+				</div>
+		</div>
+		<script	src="script.js"></script>
+</body>
+</html>

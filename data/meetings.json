@@ -1,0 +1,21 @@
+[
+  {
+    "id": "f8c7a7e7-32ac-4613-85c3-3c127bbd3062",
+    "title": "Project Discussion Meeting-sept 16",
+    "notes": "The meeting focused on discussing the current progress of the project and reviewing the work completed so far.\nThe meeting concluded with planning the next steps and assigning responsibilities to the team members.",
+    "summary": "The meeting focused on discussing the current progress of the project and reviewing the work completed so far.\tThe meeting concluded with planning the next steps and assigning responsibilities to the team members.",
+    "keyPoints": [
+      "The meeting focused on discussing the current progress of the project and reviewing the work completed so far.",
+      "The meeting concluded with planning the next steps and assigning responsibilities to the team members."
+    ],
+    "actionItems": [
+      {
+        "text": "The meeting concluded with planning the next steps and assigning responsibilities to the team members.",
+        "owner": "Unassigned",
+        "due": null,
+        "done": false
+      }
+    ],
+    "createdAt": "2026-09-16T17:20:34.629Z"
+  }
+]
